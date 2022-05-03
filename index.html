@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINGLE PAGE APPLICATION</title>
+    <style>
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        
+        
+
+
+</style>
+
+
+</head>
+
+<body id = "bo">
+    <nav class = "nav" style = " display: flex;
+            justify-content: space-around ; background-color:wheat;
+            " >
+    <h1 onclick=my() style = "cursor: pointer">Home</h1>
+    <h1 onclick=your() style = "cursor: pointer">About</h1>
+    <h1 onclick=his() style = "cursor: pointer">Contact Us</h1>
+    </nav>    
+        <div id="dv" style="display: none" >
+        <h1 id = "ml" style = "display:block ">
+        your HOME PAGE COMPONENT goes here</h1>
+        
+        <h1 id = "mu"style = "display:block">
+        your ABOUT US COMPONENT goes here</h1>
+    
+        <h1 id = "mn"style = "display:block">
+        your CONTACT US COMPONENT goes here</h1>
+
+    </div>
+
+        <script>
+            function my()
+{
+  if (document.getElementById('ml').style.display = "block")
+    {
+        document.getElementById('dv').style.display = "block";
+        document.getElementById('bo').style.backgroundColor = "aqua";  
+        
+      document.getElementById('mu').style.display = "none";
+      document.getElementById('mn').style.display = "none";
+    }
+  
+}
+
+
+function your()
+{
+  if (document.getElementById('mu').style.display = "block")
+    {
+        document.getElementById('dv').style.display = "block";
+        document.getElementById('bo').style.backgroundColor = "yellow";
+        
+      document.getElementById('ml').style.display = "none";
+      document.getElementById('mn').style.display = "none";
+    }
+  
+}
+
+
+function his()
+{
+  if (document.getElementById('mn').style.display = "block")
+    {
+        document.getElementById('dv').style.display = "block";
+        document.getElementById('bo').style.backgroundColor = "pink";
+        
+      document.getElementById('ml').style.display = "none";
+      document.getElementById('mu').style.display = "none";
+    }
+  
+}
+        </script>
+      
+            
+</body>
+</html>
